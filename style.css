@@ -1,1 +1,63 @@
+/* Design Tokens */
+:root {
+  --color-primary: #1f3a5f;
+  --color-secondary: #4f6d7a;
+  --color-accent: #c0d6df;
+  --color-background: #f8f9fa;
+  --color-text: #222222;
 
+  --font-heading: Georgia, serif;
+  --font-body: Arial, sans-serif;
+  --font-accent: "Trebuchet MS", sans-serif;
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+}
+
+/* Global Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  margin: 0;
+  padding: var(--space-md);
+  line-height: 1.6;
+}
+
+/* Type Scale */
+h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--color-primary);
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-secondary);
+}
+
+h3 {
+  font-family: var(--font-accent);
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* Header */
+header {
+  background-color: var(--color-accent);
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+}
